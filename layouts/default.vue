@@ -23,6 +23,7 @@
       :clipped="clipped"
       v-model="drawer"
       :disable-route-watcher = true
+      :disable-resize-watcher = true
       fixed
       app
     >
@@ -49,7 +50,7 @@
       fixed
       app
     >
-      <v-toolbar-side-icon @click="drawer = !drawer"  id="drawer-button"/>
+      <v-toolbar-side-icon @click="drawer = !drawer"  id="drawer-button" class="hidden-md-and-up"/>
 
       <img id="logo" v-bind:src="image">
       <v-toolbar-title v-text="title"/>
@@ -134,13 +135,13 @@
     opacity: 0.7;
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 959px) {
     #drawer-button {
       display: none;
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 959px) {
     #drawer-button {
       display: unset;
     }
