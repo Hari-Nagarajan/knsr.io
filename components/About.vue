@@ -14,6 +14,7 @@
           <div class="icon">
             <font-awesome-icon class="fa-icon" icon="fist-raised"/>
           </div>
+
           <h2>Adaptability</h2>
           <p>We are able to rapidly expand even in the harshest environments.</p>
         </div>
@@ -27,7 +28,6 @@
         </div>
       </div>
 
-      <div class="quote-band">
         <div class="quote">
           <blockquote>
             <p class="lead">KNSR gave me exponential growth. No matter what impediments we came across,
@@ -37,7 +37,7 @@
             New York, NY</h2>
           </blockquote>
         </div>
-      </div>
+
     </div>
 </template>
 
@@ -59,7 +59,7 @@
     padding-top: 100px;
     margin: auto;
     max-width: 1000px;
-    height: 100vh;
+    height: 50vh;
     vertical-align: middle;
     text-align: center;
   }
@@ -71,7 +71,6 @@
     text-align: center;
 
   }
-
   .icon {
     width: 140px;
     height: 140px;
@@ -79,42 +78,31 @@
     background-color: #222;
     border-radius: 50%;
     margin: auto;
-    text-align: center;
     font-size: 90px;
+    text-align: center;
     padding-top: 5px;
   }
-
   .fa-icon {
-    font-size: 90px;
     font-style: unset;
   }
-
-  .quote-band {
-    width: 100vw;
-    position: absolute;
-    left: 0;
-  }
   .quote {
-    padding: 0 15%;
+    align-self: center;
     padding-top: 0px;
-    padding-right: 15%;
     padding-bottom: 0px;
-    padding-left: 15%;
+    max-width: 1000px;
+    display: inline-table;
   }
-
   blockquote {
     position: relative;
-    margin: 0;
     padding: 30px 120px;
     font-family: Georgia, serif;
     font-size: 240px;
     font-style: italic;
     color: white;
     text-align: center;
-    margin-top: 30px;
+    margin: 30px 0 0;
     border: 0px;
   }
-
   blockquote p {
     font-size: 1.8rem;
   }
@@ -131,7 +119,7 @@
   }
   blockquote:after {
     top: 10px;
-    right: 10%;
+    right: 80px;
     content: "\201D";
   }
 
@@ -141,4 +129,47 @@
     height: 60px;
     line-height: 1;
   }
+
+  @media (max-width: 440px){
+    #about {
+      padding-top: 25px;
+      height: 100vh;
+      display: grid;
+    }
+
+    .icon {
+      padding-top: 1px;
+      font-size: 45px;
+      width: 70px;
+      height: 70px;
+    }
+
+    .attrib h2 {
+      font-size: 1.3em;
+    }
+
+    blockquote {
+      font-size:  60px;
+      padding: 15px 60px 15px 60px;
+    }
+
+    blockquote p {
+      font-size: 1rem;
+    }
+    blockquote h2 {
+      font-size: 1.5rem;
+    }
+    blockquote:before {
+      top: 10px;
+      left: -10px;
+      content: "\201C";
+    }
+    blockquote:after {
+      top: 10px;
+      right: 0;
+      content: "\201D";
+    }
+
+  }
+
 </style>

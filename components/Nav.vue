@@ -1,46 +1,48 @@
 <template>
   <div id="nav-bar">
-    <!--<v-navigation-drawer-->
-      <!--:mini-variant="miniVariant"-->
-      <!--:clipped="clipped"-->
-      <!--v-model="drawer"-->
-      <!--:disable-route-watcher = true-->
-      <!--:disable-resize-watcher = true-->
-      <!--fixed-->
-      <!--app-->
-    <!--&gt;-->
-      <!--<v-list>-->
-        <!--<v-list-tile-->
-          <!--v-for="(item, i) in items"-->
-          <!--:to="item.to"-->
-          <!--:key="i"-->
-          <!--router-->
-          <!--exact-->
-        <!--&gt;-->
-          <!--<v-list-tile-action>-->
-            <!--<v-icon v-html="item.icon" />-->
-          <!--</v-list-tile-action>-->
-          <!--<v-list-tile-content>-->
-            <!--<v-list-tile-title v-text="item.title" />-->
-          <!--</v-list-tile-content>-->
-        <!--</v-list-tile>-->
-      <!--</v-list>-->
-    <!--</v-navigation-drawer>-->
+    <v-navigation-drawer
+      :mini-variant="miniVariant"
+      :clipped="clipped"
+      v-model="drawer"
+      :disable-route-watcher = true
+      :disable-resize-watcher = true
+      fixed
+      app
+    >
+      <v-list>
+        <v-list-tile
+          v-for="(item, i) in items"
+          :to="item.to"
+          :key="i"
+          router
+          exact
+        >
+          <v-list-tile-action>
+            <v-icon v-html="item.icon" />
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title v-text="item.title" />
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
 
     <v-toolbar
       :clipped-left="clipped"
       id='navbar'
     >
-      <v-toolbar-side-icon @click="drawer = !drawer"  id="drawer-button" class="hidden-md-and-up"/>
+      <v-toolbar-side-icon @click="drawer = !drawer"  id="drawer-button" class="hidden-md-and-up"
+                           scroll-off-screen
+      />
 
       <img id="logo" v-bind:src="image">
       <v-toolbar-title v-text="title"/>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>Home</v-btn>
-        <v-btn flat>About</v-btn>
-        <v-btn flat>Our Team</v-btn>
-        <v-btn flat>Contact Us</v-btn>
+        <v-btn href="#home" flat>Home</v-btn>
+        <v-btn href="#about" flat>About</v-btn>
+        <v-btn href="#team" flat>Our Team</v-btn>
+        <v-btn href="#home" flat>Contact Us</v-btn>
       </v-toolbar-items>
     </v-toolbar>
   </div>
@@ -61,12 +63,33 @@
         drawer: false,
         fixed: false,
         items: [
-          { icon: 'apps', title: 'Welcome', to: '/' },
+          { icon: 'apps', title: 'Home', to: '#home' },
+          { icon: 'apps', title: 'About', to: '#about' },
+          { icon: 'apps', title: 'Our Team', to: '#team' },
+          { icon: 'apps', title: 'Home', to: '#home' },
         ],
         miniVariant: false,
         right: true,
         rightDrawer: false,
       }
+    },
+    mounted() {
+      this.$nextTick(function(){
+        window.addEventListener("scroll", function(){
+          var navbar = document.getElementById("nav-bar");
+          var nav_classes = navbar.classList;
+          if(document.documentElement.scrollTop >= 150) {
+            if (nav_classes.contains("shrink") === false) {
+              nav_classes.toggle("shrink");
+            }
+          }
+          else {
+            if (nav_classes.contains("shrink") === true) {
+              nav_classes.toggle("shrink");
+            }
+          }
+        })
+      })
     }
     }
 </script>
@@ -79,7 +102,7 @@
     top: 0;
     left: 0;
     position: fixed;
-    margin-top: 36px;
+    margin-top: 20px;
     z-index: 100;
   }
 
@@ -91,7 +114,11 @@
     max-width: 1000px;
     margin: auto;
   }
-
+  .shrink {
+    margin-top: 0!important;
+    background-color: #21212199;
+    box-shadow: 5px;
+  }
   #logo {
     height: 50px;
     width: 50px;
