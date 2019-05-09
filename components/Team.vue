@@ -34,11 +34,11 @@
         return {
           team: [
             {id: 0, name: "Hari Nagarajan", role: "Engineering", photo: HariPhoto},
-            {id: 1, name: "May Park", role: "Stan", photo: MayPhoto},
-            {id: 2, name: "Diego Tomsig", role: "Operations", photo: DiegoPhoto},
-            {id: 3, name: "Anil René", role: "Finance", photo: AnilPhoto},
-            {id: 4, name: "Karen Boyce", role: "Legal", photo: KarenPhoto},
-            {id: 5, name: "Rita Juliana", role: "Engineering", photo: RitaPhoto}
+            {id: 1, name: "Rita Juliana", role: "Engineering", photo: RitaPhoto},
+            {id: 2, name: "May Park", role: "Stan", photo: MayPhoto},
+            {id: 3, name: "Diego Tomsig", role: "Operations", photo: DiegoPhoto},
+            {id: 4, name: "Anil René", role: "Finance", photo: AnilPhoto},
+            {id: 5, name: "Karen Boyce", role: "Legal", photo: KarenPhoto}
           ]
         }
       }
