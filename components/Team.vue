@@ -22,8 +22,8 @@
   import MayPhoto from '@/assets/may.jpg'
   import DiegoPhoto from '@/assets/diego.jpg'
   import AnilPhoto from '@/assets/anil.jpg'
-  import KarenPhoto from '@/assets/karen.jpeg'
-  import RitaPhoto from '@/assets/rita.jpeg'
+  import KarenPhoto from '@/assets/karen.jpg'
+  import RitaPhoto from '@/assets/rita.jpg'
 
   export default {
         name: "Team",
