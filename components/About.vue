@@ -59,7 +59,6 @@
     padding-top: 100px;
     margin: auto;
     max-width: 1000px;
-    height: 50vh;
     vertical-align: middle;
     text-align: center;
   }
