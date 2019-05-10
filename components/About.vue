@@ -30,8 +30,9 @@
 
         <div class="quote">
           <blockquote>
-            <p class="lead">KNSR gave me exponential growth. No matter what impediments we came across,
-              there was no stopping KNSR.</p>
+            <p class="lead">KNSR gave me exponential growth in my 
+               customer base. No matter what impediments we came across,
+               there was no stopping KNSR.</p>
             <h2>Gwas Ball
             <br>
             New York, NY</h2>
