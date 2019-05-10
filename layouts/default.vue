@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <vue-particles
+    <vue-particles id="particles-js"
     color="#dedede"
     :particleOpacity="0.4"
     :particlesNumber="80"
@@ -22,8 +22,8 @@
 
 
     <v-content id="main">
-      <v-container>
-        <nuxt/>
+      <v-container id="container">
+        <nuxt></nuxt>
       </v-container>
     </v-content>
 
@@ -62,14 +62,10 @@
 
 <style scoped>
 
-  .container {
+  #container {
     padding: unset;
     max-width: 100%;
   }
-  #footer {
-    padding-left: 1em;
-  }
-
 
   #main {
     position: absolute;

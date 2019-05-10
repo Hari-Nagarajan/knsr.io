@@ -1,42 +1,12 @@
 <template>
   <div id="nav-bar">
-    <v-navigation-drawer
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      v-model="drawer"
-      :disable-route-watcher = true
-      :disable-resize-watcher = true
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-tile
-          v-for="(item, i) in items"
-          :to="item.to"
-          :key="i"
-          router
-          exact
-        >
-          <v-list-tile-action>
-            <v-icon v-html="item.icon" />
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
 
     <v-toolbar
       :clipped-left="clipped"
       id='navbar'
     >
-      <v-toolbar-side-icon @click="drawer = !drawer"  id="drawer-button" class="hidden-md-and-up"
-                           scroll-off-screen
-      />
-
-      <img id="logo" v-bind:src="image">
-      <v-toolbar-title v-text="title"/>
+      <img id="logo" v-bind:src="image" alt="Logo">
+      <v-toolbar-title v-text="title" id="nav-bar-title"/>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn href="#home" flat>Home</v-btn>
@@ -76,8 +46,8 @@
     mounted() {
       this.$nextTick(function(){
         window.addEventListener("scroll", function(){
-          var navbar = document.getElementById("nav-bar");
-          var nav_classes = navbar.classList;
+          const navbar = document.getElementById("nav-bar");
+          const nav_classes = navbar.classList;
           if(document.documentElement.scrollTop >= 150) {
             if (nav_classes.contains("shrink") === false) {
               nav_classes.toggle("shrink");
@@ -94,6 +64,7 @@
     }
 </script>
 
+<!--suppress CssUnusedSymbol -->
 <style scoped>
 
   #nav-bar {
@@ -117,7 +88,7 @@
   .shrink {
     margin-top: 0!important;
     background-color: #21212199;
-    box-shadow: 5px;
+    opacity: 1;
   }
   #logo {
     height: 50px;
@@ -126,29 +97,10 @@
 
   }
 
-  .v-toolbar__title{
+  #nav-bar-title{
     margin-left: 0;
   }
 
-  #main {
-    position: absolute;
-    align-self: center;
-  }
-
-  .v-toolbar {
-    opacity: 1;
-  }
-
-  @media only screen and (min-width: 959px) {
-    #drawer-button {
-      display: none;
-    }
-  }
-
-  @media only screen and (max-width: 959px) {
-    #drawer-button {
-      display: unset;
-    }
-  }
+  
 
 </style>
