@@ -1,8 +1,8 @@
 {
   "name": "KNSR",
   "version": "1.0.0",
-  "description": "My extraordinary Nuxt.js project",
-  "author": "hari nagarajan",
+  "description": "KNSR - Your leading growth experts.",
+  "author": "KNSR LLC",
   "private": true,
   "scripts": {
     "dev": "nuxt",
