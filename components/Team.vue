@@ -29,7 +29,7 @@
     },
       data() {
         return {
-          teamHeader: "Meet the KNSR team.",
+          teamHeader: "Get to know the KNSR team.",
           team: [
             {id: 0, name: "Hari Nagarajan", role: "Founder/Technical Lead", photo: HariPhoto},
             {id: 1, name: "Anil René", role: "Content Strategist", photo: AnilPhoto},
