@@ -36,8 +36,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
-  ],
+    '@/plugins/vuetify'  ],
 
   /*
   ** Nuxt.js modules
@@ -46,7 +45,8 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     'nuxt-fontawesome',
-  ],
+    '@nuxtjs/google-gtag'
+],
   /*
   ** Axios module configuration
   */
@@ -76,6 +76,14 @@ module.exports = {
     test: {
       loader: 'vue-loader',
     }
+  },
+  'google-gtag':{
+    id: 'UA-139975523-1', // required
+    config:{
+      anonymize_ip: false, // anonymize IP
+      send_page_view: false, // might be necessary to avoid duplicated page track on page reload
+    },
+    debug: false, // enable to track in dev mode
+    // optional you can add more configuration like [AdWords](https://developers.google.com/adwords-remarketing-tag/#configuring_the_global_site_tag_for_multiple_accounts)
   }
-
 };
