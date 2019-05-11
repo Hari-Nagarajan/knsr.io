@@ -13,13 +13,13 @@
 </template>
 
 <script>
-  import HomeImg from '~/assets/home.jpg'
+  import HomeImg from '~/assets/images/home.jpg'
   export default {
         name: "Home",
       data() {
           return {
-            homeHeader: "Introduce KNSR to your life",
-            homeSubHeader: "Our KNSR system is proven to have an unstoppable growth model with no end in sight.",
+            homeHeader: "KNSR is what your business needs.",
+            homeSubHeader: "Unchecked growth and virality is what KNSR is all about. Boost your digital presence with KNSR.",
             HomeImg
           }
       }
@@ -28,7 +28,7 @@
 
 <style>
  #home {
-   background: url("/assets/home.jpg");
+   background: url("/assets/images/home.jpg");
    opacity: 0.6;
    width: 100vw;
    height: 100vh;

@@ -15,12 +15,12 @@
 
 <script>
   import TeamBox from '~/components/TeamBox.vue'
-  import HariPhoto from '~/assets/hari.jpg'
-  import MayPhoto from '~/assets/may.jpg'
-  import DiegoPhoto from '~/assets/diego.jpg'
-  import AnilPhoto from '~/assets/anil.jpg'
-  import KarenPhoto from '~/assets/karen.jpg'
-  import RitaPhoto from '~/assets/rita.jpg'
+  import HariPhoto from '~/assets/images/hari.jpg'
+  import MayPhoto from '~/assets/images/may.jpg'
+  import DiegoPhoto from '~/assets/images/diego.jpg'
+  import AnilPhoto from '~/assets/images/anil.jpg'
+  import KarenPhoto from '~/assets/images/karen.jpg'
+  import RitaPhoto from '~/assets/images/rita.jpg'
 
   export default {
         name: "Team",

@@ -33,18 +33,18 @@
           {
             id: 0,
             attribute: "Self Sufficient",
-            icon: "tools",
-            description: "We grow unchecked without any external signals or influences."},
+            icon: "hand-holding-heart",
+            description: "We provide you with the knowledge and tools to sustain your explosive growth."},
           {
             id: 1,
             attribute: "Adaptability",
             icon: "fist-raised",
-            description: "We are able to rapidly expand even in the harshest environments."},
+            description: "There is no environment that KNSR cannot thrive in."},
           {
             id: 2,
-            attribute: "Limitless",
+            attribute: "Consistent",
             icon: "dice-d20",
-            description: "Our potential for growth and expansion is limitless."}
+            description: "KNSR is consistent, we have proven ourselves time and time again to be unstoppable."}
         ]
       }
     }
