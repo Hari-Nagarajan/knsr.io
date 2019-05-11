@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "KNSR - Your leading growth experts.",
   "author": "KNSR LLC",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
