@@ -14,13 +14,13 @@
 </template>
 
 <script>
-  import TeamBox from '@/components/TeamBox.vue'
-  import HariPhoto from '@/assets/hari.jpg'
-  import MayPhoto from '@/assets/may.jpg'
-  import DiegoPhoto from '@/assets/diego.jpg'
-  import AnilPhoto from '@/assets/anil.jpg'
-  import KarenPhoto from '@/assets/karen.jpg'
-  import RitaPhoto from '@/assets/rita.jpg'
+  import TeamBox from '~/components/TeamBox.vue'
+  import HariPhoto from '~/assets/hari.jpg'
+  import MayPhoto from '~/assets/may.jpg'
+  import DiegoPhoto from '~/assets/diego.jpg'
+  import AnilPhoto from '~/assets/anil.jpg'
+  import KarenPhoto from '~/assets/karen.jpg'
+  import RitaPhoto from '~/assets/rita.jpg'
 
   export default {
         name: "Team",
