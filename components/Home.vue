@@ -3,9 +3,9 @@
     <div id="home-text-wrapper">
       <div id="home-text">
         <h1>
-          Introduce KNSR to your life
+          {{homeHeader}}
         </h1>
-        <p>Our KNSR system is proven to have an unstoppable growth model with no end in sight.</p>
+        <p>{{homeSubHeader}}</p>
       </div>
     </div>
 
@@ -18,6 +18,8 @@
         name: "Home",
       data() {
           return {
+            homeHeader: "Introduce KNSR to your life",
+            homeSubHeader: "Our KNSR system is proven to have an unstoppable growth model with no end in sight.",
             HomeImg
           }
       }

@@ -1,6 +1,6 @@
 <template>
     <div id="team">
-      <h1>Meet the KNSR team.</h1>
+      <h1>{{teamHeader}}</h1>
       <div id="team-box">
           <TeamBox
             v-for="mate in team"
@@ -9,9 +9,6 @@
             :role="mate.role"
             :photo="mate.photo"
           />
-
-
-
       </div>
     </div>
 </template>
@@ -32,13 +29,14 @@
     },
       data() {
         return {
+          teamHeader: "Meet the KNSR team.",
           team: [
-            {id: 0, name: "Hari Nagarajan", role: "Engineering", photo: HariPhoto},
-            {id: 1, name: "Rita Juliana", role: "Engineering", photo: RitaPhoto},
-            {id: 2, name: "May Park", role: "Stan", photo: MayPhoto},
-            {id: 3, name: "Diego Tomsig", role: "Operations", photo: DiegoPhoto},
-            {id: 4, name: "Anil René", role: "Finance", photo: AnilPhoto},
-            {id: 5, name: "Karen Boyce", role: "Legal", photo: KarenPhoto}
+            {id: 0, name: "Hari Nagarajan", role: "Founder/Technical Lead", photo: HariPhoto},
+            {id: 1, name: "Anil René", role: "Content Strategist", photo: AnilPhoto},
+            {id: 2, name: "Rita Juliana", role: "Information Architect", photo: RitaPhoto},
+            {id: 3, name: "May Park", role: "Creative Director", photo: MayPhoto},
+            {id: 4, name: "Diego Tomsig", role: "Operations Manager", photo: DiegoPhoto},
+            {id: 5, name: "Karen Boyce", role: "Product Manager", photo: KarenPhoto}
           ]
         }
       }
