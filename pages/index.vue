@@ -15,12 +15,11 @@
 </template>
 
 <script>
-  import Home from '@/components/Home.vue'
-  import About from '@/components/About.vue'
-  import Team from '@/components/Team.vue'
-  import Quote from '@/components/Quote.vue'
-
-  import Footer from '@/components/Footer.vue'
+  import Home from '~/components/Home.vue'
+  import About from '~/components/About.vue'
+  import Team from '~/components/Team.vue'
+  import Quote from '~/components/Quote.vue'
+  import Footer from '~/components/Footer.vue'
 
   export default {
   components: {

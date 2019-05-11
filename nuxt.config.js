@@ -1,3 +1,4 @@
+/*eslint null:0*/
 const pkg = require('./package');
 
 module.exports = {
@@ -44,7 +45,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
   ],
   /*
   ** Axios module configuration
@@ -69,7 +70,12 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-
+    }
+  },
+  env: {
+    test: {
+      loader: 'vue-loader',
     }
   }
+
 };

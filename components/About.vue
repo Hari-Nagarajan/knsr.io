@@ -16,7 +16,7 @@
 </template>
 
 <script>
-  import Attribute from '@/components/Attribute.vue'
+  import Attribute from '~/components/Attribute.vue'
 
   export default {
     name: "About",

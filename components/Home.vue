@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import HomeImg from 'assets/home.jpg'
+  import HomeImg from '~/assets/home.jpg'
   export default {
         name: "Home",
       data() {
