@@ -31,7 +31,7 @@
 </template>
 
 <script>
-  import NuxtLogo from '@/assets/logo/logo26.png'
+  import NuxtLogo from '@/assets/logo/logo.svg'
   import Vue from 'vue'
   import Nav from '@/components/Nav.vue'
 

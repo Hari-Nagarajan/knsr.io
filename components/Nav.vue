@@ -21,7 +21,7 @@
 </template>
 
 <script>
-  import NuxtLogo from '@/assets/logo/logo26.png'
+  import NuxtLogo from '@/assets/logo/logo.svg'
 
   export default {
         name: "Nav",
@@ -101,6 +101,6 @@
     margin-left: 0;
   }
 
-  
+
 
 </style>
