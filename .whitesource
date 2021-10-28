@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ##########################################################
 ####    WhiteSource Integration configuration file    ####
 ##########################################################
@@ -16,4 +15,3 @@ vulnerable.check.run.conclusion.level=failure
     "vulnerableCheckRunConclusionLevel": "failure"
   }
 }
->>>>>>> e09fe1a928f6ab9ddea341fe222bda24799cc0bf
