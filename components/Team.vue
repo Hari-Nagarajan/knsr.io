@@ -32,11 +32,7 @@
           teamHeader: "Get to know the KNSR team.",
           team: [
             {id: 0, name: "Hari Nagarajan", role: "Founder/Technical Lead", photo: HariPhoto},
-            {id: 1, name: "Anil René", role: "Content Strategist", photo: AnilPhoto},
-            {id: 2, name: "Rita Juliana", role: "Information Architect", photo: RitaPhoto},
-            {id: 3, name: "May Park", role: "Creative Director", photo: MayPhoto},
-            {id: 4, name: "Diego Tomsig", role: "Operations Manager", photo: DiegoPhoto},
-            {id: 5, name: "Karen Boyce", role: "Product Manager", photo: KarenPhoto}
+            {id: 1, name: "Austin Agnish", role: "Sales Director", photo: AnilPhoto}
           ]
         }
       }

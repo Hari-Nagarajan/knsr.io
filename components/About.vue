@@ -32,14 +32,14 @@
         attributes: [
           {
             id: 0,
-            attribute: "Self Sufficient",
-            icon: "hand-holding-heart",
-            description: "We provide you with the knowledge and tools to sustain your explosive growth."},
+            attribute: "Fast Funding",
+            icon: "money-bill-wave",
+            description: "We offer Next Day funding. No extra costs, fees or fine print."},
           {
             id: 1,
-            attribute: "Adaptability",
+            attribute: "Custimizability",
             icon: "fist-raised",
-            description: "There is no environment that KNSR cannot thrive in."},
+            description: "We will customize your solution to fit your unique business needs."},
           {
             id: 2,
             attribute: "Consistent",

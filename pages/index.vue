@@ -11,8 +11,7 @@
     />
     <Team />
     <Quote
-      quote="We were hesitant at first, but KNSR turned my business cash positive
-      and took us to the next level. I'm looking forward to the future."
+      quote="KNSR helped me set everything up to process through my ecommerce website and saved me a lot of money!"
       name="Shauna Maddox"
       location="New York, NY"
     />
