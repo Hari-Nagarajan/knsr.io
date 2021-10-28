@@ -19,7 +19,7 @@
       data() {
           return {
             homeHeader: "KNSR is what your business needs.",
-            homeSubHeader: "Unchecked growth and virality is what KNSR is all about. Boost your digital presence with KNSR.",
+            homeSubHeader: "Reduce your cost and make your payment processing easier.",
             HomeImg
           }
       }
