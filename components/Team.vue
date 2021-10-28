@@ -32,7 +32,7 @@
           teamHeader: "Get to know the KNSR team.",
           team: [
             {id: 0, name: "Hari Nagarajan", role: "Software", photo: HariPhoto},
-            {id: 1, name: "Austin Agnish", role: "Sales", photo: AnilPhoto},
+            {id: 1, name: "Austin Hughes", role: "Sales", photo: AnilPhoto},
             {id: 2, name: "May Park", role: "Design", photo: MayPhoto}
           ]
         }
@@ -63,3 +63,4 @@
 
 
 </style>
+Agnish
